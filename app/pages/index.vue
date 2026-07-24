@@ -145,9 +145,10 @@ const handleLogin = async () => {
       user_tel: form.value.user_tel.trim(),
       password: form.value.password
     })
-    if (res.data.status === '00' && res.data.user?.token) {
-      localStorage.setItem('token', res.data.user.token)
-      localStorage.setItem('user_name', res.data.user.user_name)
+    const userToken = res.data.token || res.data.user?.token
+    if (res.data.status === '00' && userToken) {
+      localStorage.setItem('token', userToken)
+      localStorage.setItem('user_name', res.data.user?.user_name || '')
       router.push('/dashboard')
     } else {
       error.value = res.data.message || 'ບໍ່ສາມາດເຂົ້າລະບົບໄດ້'
