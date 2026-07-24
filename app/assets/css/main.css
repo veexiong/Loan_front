@@ -1,0 +1,101 @@
+/* ----------------------------
+   Base CSS สำหรับเว็บ Lao
+---------------------------- */
+
+/* นำฟอนต์จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;500;600;700&display=swap');
+
+/* ตั้งค่า global font-family และ reset basic elements */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Noto Sans Lao', 'Phetsarath OT', 'Noto Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Set background and text color */
+body {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans Lao', 'Phetsarath OT', 'Noto Sans', sans-serif;
+  font-weight: 600; /* ปรับให้ตัวหนาชัด */
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* Specific heading style */
+h2.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p, span, label, a, li {
+  font-family: 'Noto Sans Lao', 'Phetsarath OT', 'Noto Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button, input[type="button"], input[type="submit"] {
+  font-family: 'Noto Sans Lao', 'Phetsarath OT', 'Noto Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Forms */
+input, textarea, select {
+  font-family: 'Noto Sans Lao', 'Phetsarath OT', 'Noto Sans', sans-serif;
+  font-size: 14px;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+/* Tables */
+table {
+  font-family: 'Noto Sans Lao', 'Phetsarath OT', 'Noto Sans', sans-serif;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.bold { font-weight: 600; }
